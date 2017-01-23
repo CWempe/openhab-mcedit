@@ -12,16 +12,20 @@ define  color_parameter          yellow
 context default
   keyword  whole  sitemap        color_model
 
-# NonLinkableWidget
-  keyword  whole  Switch         color_nonlinkwidget
-  keyword  whole  Selection      color_nonlinkwidget
-  keyword  whole  Slider         color_nonlinkwidget
-  keyword  whole  List           color_nonlinkwidget
-  keyword  whole  Setpoint       color_nonlinkwidget
-  keyword  whole  Video          color_nonlinkwidget
-  keyword  whole  Chart          color_nonlinkwidget
-  keyword  whole  Webview        color_nonlinkwidget
+# Elements
   keyword  whole  Colorpicker    color_nonlinkwidget
+  keyword  whole  Chart	         color_nonlinkwidget
+  keyword  whole  Frame	         color_nonlinkwidget
+  keyword  whole  Group	         color_nonlinkwidget
+  keyword  whole  Image	         color_nonlinkwidget
+  keyword  whole  List	         color_nonlinkwidget
+  keyword  whole  Selection      color_nonlinkwidget
+  keyword  whole  Setpoint       color_nonlinkwidget
+  keyword  whole  Slider	 color_nonlinkwidget
+  keyword  whole  Switch	 color_nonlinkwidget
+  keyword  whole  Text	         color_nonlinkwidget
+  keyword  whole  Video	         color_nonlinkwidget
+  keyword  whole  Webview	 color_nonlinkwidget
 
 # LinkableWidget
   keyword  whole  Text           color_linkablewidget
@@ -46,6 +50,7 @@ context default
   keyword  whole  refresh        color_parameter
   keyword  whole  visibility     color_parameter
   keyword  whole  valuecolor     color_parameter
+  keyword  whole  labelcolor     color_parameter
 
 
 
