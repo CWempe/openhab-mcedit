@@ -18,15 +18,28 @@ define  color_comment            brown
 context default
 # Commands
   keyword  whole  import         color_command
+  keyword  whole  import         color_command
   keyword  whole  var            color_command
   keyword  whole  say            color_command
   keyword  whole  if             color_command
   keyword  whole  else           color_command
-  keyword  whole  postUpdate     color_command
   keyword  whole  switch         color_command
   keyword  whole  println        color_command
   keyword  whole  case           color_command
   keyword  whole  or             color_command
+  keyword  whole  postUpdate     color_command
+  keyword  whole  sendCommand    color_command
+  keyword  whole  createTimer    color_command
+  keyword  whole  sendTelegram   color_command
+  keyword  whole  sendTweet      color_command
+  keyword  whole  sendMail       color_command
+  keyword  whole  notifyMyAndroid color_command
+  keyword  whole  logDebug       color_command
+  keyword  whole  logInfo        color_command
+  keyword  whole  logMessage     color_command
+  keyword  whole  startTime      color_command
+  keyword  whole  endTime        color_command
+  keyword  whole  callScript     color_command
 
 # VarTypes
   keyword  whole  Timer          color_vartype
@@ -79,9 +92,6 @@ context default
   keyword  whole  setMasterVolume       color_parameter
   keyword  whole  increaseMasterVolume  color_parameter
   keyword  whole  decreaseMasterVolume  color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
-
 
 
 # Comments
