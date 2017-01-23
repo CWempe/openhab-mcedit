@@ -44,11 +44,8 @@ context default
   keyword  whole  url            color_parameter
   keyword  whole  hight          color_parameter
   keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  refresh        color_parameter
+  keyword  whole  visibility     color_parameter
+  keyword  whole  valuecolor     color_parameter
 
 
 
