@@ -3,21 +3,26 @@
 syntax files for mcedit
 
 ## Installing
-* copy the syntax-files to /usr/share/mc/syntax/
-* copy'n'paste the following lines to the file "Syntax"
+
+To install the syntax highlighting execute these commands
 
 ```
-file ..\*\\.(items)$ openHAB\sItems 
-include openhab-items.syntax  
- 
-file ..\*\\.(sitemap)$ openHAB\sSitemap 
-include openhab-sitemap.syntax
- 
-file ..\*\\.(persist)$ openHAB\sPersistence
-include openhab-persist.syntax
- 
-file ..\*\\.(rules)$ openHAB\sRules
-include openhab-rules.syntax 
-```
+# download insert new triggers to Syntax file
+sudo curl -L -o /tmp/Syntax_insert https://github.com/CWempe/openhab-mcedit/raw/master/Syntax_insert
+sudo mv /usr/share/mc/syntax/Syntax /usr/share/mc/syntax/Syntax.backup
 
-* edit the Debian-line from `file (rules|rocks)$ Debian\srules` to `file (rocks)$ Debian\srules`, because it interferes with openhabs rules-files 
+# add all previous shemes exept 'unknown'
+head -n -2 /usr/share/mc/syntax/Syntax.backup | sudo tee /usr/share/mc/syntax/Syntax
+
+# remove debian .rules  to make openhab .rules work
+sudo sed -i s/rules\|rocks/rocks/ /usr/share/mc/syntax/Syntax
+
+# insert openhab parts
+cat /tmp/Syntax_insert | sudo tee -a /usr/share/mc/syntax/Syntax
+
+# add 'unknown' part
+tail -n -2 /usr/share/mc/syntax/Syntax.backup | sudo tee -a /usr/share/mc/syntax/Syntax
+
+sudo rm /tmp/Syntax_insert
+
+```
