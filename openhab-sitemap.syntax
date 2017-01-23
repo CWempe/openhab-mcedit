@@ -1,0 +1,61 @@
+# Syntax highlighting for sitemap files of openHAB in mcedit
+
+
+# default colors
+define  color_comment            brown
+define  color_model              brightred
+define  color_nonlinkwidget      brightred
+define  color_linkablewidget     brightred
+define  color_string             brightgreen
+define  color_parameter          yellow
+
+context default
+  keyword  whole  sitemap        color_model
+
+# NonLinkableWidget
+  keyword  whole  Switch         color_nonlinkwidget
+  keyword  whole  Selection      color_nonlinkwidget
+  keyword  whole  Slider         color_nonlinkwidget
+  keyword  whole  List           color_nonlinkwidget
+  keyword  whole  Setpoint       color_nonlinkwidget
+  keyword  whole  Video          color_nonlinkwidget
+  keyword  whole  Chart          color_nonlinkwidget
+  keyword  whole  Webview        color_nonlinkwidget
+  keyword  whole  Colorpicker    color_nonlinkwidget
+
+# LinkableWidget
+  keyword  whole  Text           color_linkablewidget
+  keyword  whole  Group          color_linkablewidget
+  keyword  whole  Image          color_linkablewidget
+  keyword  whole  Frame          color_linkablewidget
+
+# Parameters
+  keyword  whole  name           color_parameter
+  keyword  whole  label          color_parameter
+  keyword  whole  item           color_parameter
+  keyword  whole  period         color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  icon           color_parameter
+  keyword  whole  mappings       color_parameter
+  keyword  whole  minValue       color_parameter
+  keyword  whole  maxValue       color_parameter
+  keyword  whole  step           color_parameter
+  keyword  whole  switchsupport  color_parameter
+  keyword  whole  url            color_parameter
+  keyword  whole  hight          color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  refresh        color_parameter
+
+
+
+# Comments
+context           /\* \*/        color_comment
+context linestart // \n          color_comment
+
+# Strings
+context           " "            color_string
+context           [ ]            color_string

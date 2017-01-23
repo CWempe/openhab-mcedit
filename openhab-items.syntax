@@ -1,0 +1,59 @@
+# Syntax highlighting for items files of openHAB in mcedit
+
+
+# default colors
+define  color_comment        brown
+define  color_groupitem      brightmagenta
+define  color_item           brightred
+define  color_lable          brightgreen
+define  color_lable_var      white
+define  color_group          brightcyan
+define  color_icon           yellow
+define  color_binding        green
+define  color_binding_quote  brightgreen
+define  color_groupfunction  red
+
+context default
+
+# GroupItem
+  keyword  whole  Group          color_groupitem
+
+# Items
+  keyword  whole  Switch         color_item
+  keyword  whole  Rollershutter  color_item
+  keyword  whole  Number         color_item
+  keyword  whole  String         color_item
+  keyword  whole  Dimmer         color_item
+  keyword  whole  Contact        color_item
+  keyword  whole  DateTime       color_item
+  keyword  whole  Color          color_item
+
+# Group Functions
+  keyword  whole  AND            color_groupfunction
+  keyword  whole  OR             color_groupfunction
+  keyword  whole  NAND           color_groupfunction
+  keyword  whole  NOR            color_groupfunction
+  keyword  whole  AVG            color_groupfunction
+  keyword  whole  SUM            color_groupfunction
+  keyword  whole  MAX            color_groupfunction
+  keyword  whole  MIN            color_groupfunction
+
+
+
+# Comments
+context  /\* \*/                 color_comment
+context  // \n                   color_comment
+
+# Lables
+context  " "                     color_lable
+  keyword  [*]                   color_lable_var
+
+# Groups
+context  ( )                     color_group
+
+# Icons
+context  < >                     color_icon
+
+# Bindings
+context  { }                     color_binding
+  keyword  "*"                   color_binding_quote

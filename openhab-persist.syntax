@@ -1,0 +1,26 @@
+# Syntax highlighting for persist files of openHAB in mcedit
+
+
+# default colors
+define  color_comment            brown
+define  color_model              brightred
+define  color_string             brightgreen
+define  color_configuration      yellow
+
+context default
+  keyword  whole  Strategies     color_model
+  keyword  whole  Filters        color_model
+  keyword  whole  Items          color_model
+
+# Configuration
+  keyword  whole  strategy       color_configuration
+  keyword  whole  strategies     color_configuration
+  keyword  whole  default        color_configuration
+  keyword  whole  filter         color_configuration
+
+# Comments
+context           /\* \*/        color_comment
+context           // \n          color_comment
+
+# Strings
+context           " "            color_string
