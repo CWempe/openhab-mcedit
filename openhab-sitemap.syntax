@@ -10,22 +10,19 @@ define  color_string             brightgreen
 define  color_parameter          yellow
 
 context default
+# SitemapModel
   keyword  whole  sitemap        color_model
 
-# Elements
-  keyword  whole  Colorpicker    color_nonlinkwidget
-  keyword  whole  Chart	         color_nonlinkwidget
-  keyword  whole  Frame	         color_nonlinkwidget
-  keyword  whole  Group	         color_nonlinkwidget
-  keyword  whole  Image	         color_nonlinkwidget
-  keyword  whole  List	         color_nonlinkwidget
-  keyword  whole  Selection      color_nonlinkwidget
-  keyword  whole  Setpoint       color_nonlinkwidget
-  keyword  whole  Slider	 color_nonlinkwidget
+# NonLinkableWidget
   keyword  whole  Switch	 color_nonlinkwidget
-  keyword  whole  Text	         color_nonlinkwidget
+  keyword  whole  Selection      color_nonlinkwidget
+  keyword  whole  Slider	 color_nonlinkwidget
+  keyword  whole  List	         color_nonlinkwidget
+  keyword  whole  Setpoint       color_nonlinkwidget
   keyword  whole  Video	         color_nonlinkwidget
+  keyword  whole  Chart	         color_nonlinkwidget
   keyword  whole  Webview	 color_nonlinkwidget
+  keyword  whole  Colorpicker    color_nonlinkwidget
 
 # LinkableWidget
   keyword  whole  Text           color_linkablewidget
@@ -35,24 +32,24 @@ context default
 
 # Parameters
   keyword  whole  name           color_parameter
-  keyword  whole  label          color_parameter
   keyword  whole  item           color_parameter
-  keyword  whole  period         color_parameter
-  keyword  whole  refresh        color_parameter
+  keyword  whole  label          color_parameter
   keyword  whole  icon           color_parameter
+  keyword  whole  labelcolor     color_parameter
+  keyword  whole  valuecolor     color_parameter
+  keyword  whole  visibility     color_parameter
+  keyword  whole  url            color_parameter
+  keyword  whole  service        color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  period         color_parameter
+  keyword  whole  hight          color_parameter
   keyword  whole  mappings       color_parameter
+  keyword  whole  sendFrequency  color_parameter
+  keyword  whole  switchsupport  color_parameter
+  keyword  whole  separator      color_parameter
   keyword  whole  minValue       color_parameter
   keyword  whole  maxValue       color_parameter
   keyword  whole  step           color_parameter
-  keyword  whole  switchsupport  color_parameter
-  keyword  whole  url            color_parameter
-  keyword  whole  hight          color_parameter
-  keyword  whole  refresh        color_parameter
-  keyword  whole  visibility     color_parameter
-  keyword  whole  valuecolor     color_parameter
-  keyword  whole  labelcolor     color_parameter
-
-
 
 # Comments
 context           /\* \*/        color_comment
