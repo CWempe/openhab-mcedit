@@ -12,6 +12,7 @@ define  color_icon           yellow
 define  color_binding        green
 define  color_binding_quote  brightgreen
 define  color_groupfunction  red
+define  color_enum           yellow
 
 context default
 
@@ -39,6 +40,23 @@ context default
   keyword  whole  MAX            color_groupfunction
   keyword  whole  MIN            color_groupfunction
 
+# Enum Types
+  keyword  whole  INCREASE       color_enum
+  keyword  whole  DECREASE       color_enum
+  keyword  whole  NEXT           color_enum
+  keyword  whole  PREVIOUS       color_enum
+  keyword  whole  ON             color_enum
+  keyword  whole  OFF            color_enum
+  keyword  whole  OPEN           color_enum
+  keyword  whole  CLOSED         color_enum
+  keyword  whole  PLAY           color_enum
+  keyword  whole  PAUSE          color_enum
+  keyword  whole  REWIND         color_enum
+  keyword  whole  FASTFORWARD    color_enum
+  keyword  whole  STOP           color_enum
+  keyword  whole  MOVE           color_enum
+  keyword  whole  UP             color_enum
+  keyword  whole  DOWN           color_enum
 
 
 # Comments
