@@ -6,8 +6,8 @@ syntax files for mcedit
 
 To install the syntax highlighting execute these commands
 
-```
-# download insert new triggers to Syntax file
+```bash
+# download and insert new triggers to Syntax file
 sudo curl -L -o /tmp/Syntax_insert https://github.com/CWempe/openhab-mcedit/raw/master/Syntax_insert
 sudo mv /usr/share/mc/syntax/Syntax /usr/share/mc/syntax/Syntax.backup
 
@@ -24,5 +24,12 @@ cat /tmp/Syntax_insert | sudo tee -a /usr/share/mc/syntax/Syntax
 tail -n -2 /usr/share/mc/syntax/Syntax.backup | sudo tee -a /usr/share/mc/syntax/Syntax
 
 sudo rm /tmp/Syntax_insert
+
+
+# download syntax files for openhab files
+sudo curl -L -o /usr/share/mc/syntax/openhab-items.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-items.syntax
+sudo curl -L -o /usr/share/mc/syntax/openhab-persist.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-persist.syntax
+sudo curl -L -o /usr/share/mc/syntax/openhab-rules.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-rules.syntax
+sudo curl -L -o /usr/share/mc/syntax/openhab-sitemap.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-sitemap.syntax
 
 ```
