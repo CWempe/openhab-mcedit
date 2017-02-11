@@ -18,7 +18,6 @@ define  color_comment            brown
 context default
 # Commands
   keyword  whole  import         color_command
-  keyword  whole  import         color_command
   keyword  whole  var            color_command
   keyword  whole  say            color_command
   keyword  whole  if             color_command
