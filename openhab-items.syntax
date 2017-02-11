@@ -27,6 +27,7 @@ context default
   keyword  whole  Contact        color_item
   keyword  whole  DateTime       color_item
   keyword  whole  Color          color_item
+  keyword  whole  Player         color_item
 
 # Group Functions
   keyword  whole  AND            color_groupfunction
