@@ -29,6 +29,8 @@ context default
   keyword  whole  DateTime       color_item
   keyword  whole  Color          color_item
   keyword  whole  Player         color_item
+  keyword  whole  Location       color_item
+  keyword  whole  Call           color_item
 
 # Group Functions
   keyword  whole  AND            color_groupfunction
@@ -39,6 +41,7 @@ context default
   keyword  whole  SUM            color_groupfunction
   keyword  whole  MAX            color_groupfunction
   keyword  whole  MIN            color_groupfunction
+  keyword  whole  COUNT          color_groupfunction
 
 # Enum Types
   keyword  whole  INCREASE       color_enum
