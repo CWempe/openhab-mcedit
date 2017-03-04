@@ -25,6 +25,7 @@ context default
   keyword  whole  Colorpicker    color_nonlinkwidget
 
 # LinkableWidget
+  keyword  whole  Default        color_linkablewidget
   keyword  whole  Text           color_linkablewidget
   keyword  whole  Group          color_linkablewidget
   keyword  whole  Image          color_linkablewidget
