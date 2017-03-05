@@ -31,6 +31,7 @@ context default
   keyword  whole  Player         color_item
   keyword  whole  Location       color_item
   keyword  whole  Call           color_item
+  keyword  whole  Image          color_item
 
 # Group Functions
   keyword  whole  AND            color_groupfunction
