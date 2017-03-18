@@ -1,0 +1,29 @@
+--- Syntax.backup	2017-01-23 20:52:19.358163297 +0100
++++ Syntax	2017-01-23 21:58:18.030164996 +0100
+@@ -199,7 +199,7 @@
+ file control$ Debian\scontrol\sfile
+ include debian-control.syntax
+ 
+-file (rules|rocks)$ Debian\srules
++file (rocks)$ Debian\srules
+ include makefile.syntax
+ 
+ file .\*changelog$ Debian\schangelog\sfile
+@@ -256,5 +256,17 @@
+ file ..\*\\.([lL][kK][rR])$ PIC\slinker\sscript\sfile
+ include lkr.syntax
+ 
++file ..\*\\.(items)$ openHAB\sItems 
++include openhab-items.syntax  
++
++file ..\*\\.(sitemap)$ openHAB\sSitemap 
++include openhab-sitemap.syntax
++
++file ..\*\\.(persist)$ openHAB\sPersistence
++include openhab-persist.syntax
++
++file ..\*\\.(rules)$ openHAB\sRules
++include openhab-rules.syntax
++
+ file .\* unknown
+ include unknown.syntax
