@@ -12,6 +12,7 @@ sudo curl -L -o /usr/share/mc/syntax/openhab-items.syntax https://github.com/CWe
 sudo curl -L -o /usr/share/mc/syntax/openhab-persist.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-persist.syntax
 sudo curl -L -o /usr/share/mc/syntax/openhab-rules.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-rules.syntax
 sudo curl -L -o /usr/share/mc/syntax/openhab-sitemap.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-sitemap.syntax
+sudo curl -L -o /usr/share/mc/syntax/openhab-script.syntax https://github.com/CWempe/openhab-mcedit/raw/master/openhab-script.syntax
 
 # download and apply patch for Syntax file
 curl -L -o /tmp/Syntax.patch https://github.com/CWempe/openhab-mcedit/raw/master/Syntax.patch

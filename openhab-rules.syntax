@@ -1,5 +1,5 @@
 # Syntax highlighting for rules files of openHAB in mcedit
-
+wholechars abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_01234567890
 
 # default colors
 define  color_command            white
@@ -22,10 +22,12 @@ context default
   keyword  whole  say            color_command
   keyword  whole  if             color_command
   keyword  whole  else           color_command
+  keyword  whole  while          color_command
   keyword  whole  switch         color_command
   keyword  whole  println        color_command
   keyword  whole  case           color_command
   keyword  whole  or             color_command
+  keyword  whole  default        color_command
   keyword  whole  postUpdate     color_command
   keyword  whole  sendCommand    color_command
   keyword  whole  createTimer    color_command
@@ -33,17 +35,22 @@ context default
   keyword  whole  sendTweet      color_command
   keyword  whole  sendMail       color_command
   keyword  whole  notifyMyAndroid color_command
+  keyword  whole  logWarn        color_command
   keyword  whole  logDebug       color_command
   keyword  whole  logInfo        color_command
   keyword  whole  logMessage     color_command
   keyword  whole  startTime      color_command
   keyword  whole  endTime        color_command
   keyword  whole  callScript     color_command
+  keyword  whole  Thread         color_command
+  keyword  whole  sleep          color_command
+  keyword  whole  state          color_command
 
 # VarTypes
   keyword  whole  Timer          color_vartype
   keyword  whole  Number         color_vartype
   keyword  whole  String         color_vartype
+  keyword  whole  int            color_vartype
 
 # Rules
   keyword  whole  rule           color_rule
@@ -92,16 +99,34 @@ context default
   keyword  whole  increaseMasterVolume  color_parameter
   keyword  whole  decreaseMasterVolume  color_parameter
 
+# Numbers
+  keyword  \{0123456789\}  color_vartype
+  keyword  NULL            color_vartype
+  keyword  UNDEF           color_vartype
+  keyword  ON              color_vartype
+  keyword  OFF             color_vartype
+  keyword  OPEN            color_vartype
+  keyword  CLOSED          color_vartype
+  keyword  OFF             color_vartype
 
-# Comments
-context           /\* \*/        color_comment
-context linestart // \n          color_comment
 
-# Strings
-context           " "            color_string
+# Operators
+  keyword  ->              color_parameter
+  keyword  =>              color_parameter
+  keyword  >               color_parameter
+  keyword  <               color_parameter
+  keyword  \+              color_parameter
+  keyword  -               color_parameter
+  keyword  \*              color_parameter
+  keyword  /               color_parameter
+  keyword  =               color_parameter
+  keyword  !=              color_parameter
+  keyword  ==              color_parameter
+  keyword  &&              color_parameter
+  keyword  ||              color_parameter
+  keyword  !               color_parameter
 
-# Options
-context  ( )                     color_option
+
   keyword  "*"                   color_option_quote
   keyword  whole  import         color_command
   keyword  whole  var            color_command
@@ -112,3 +137,16 @@ context  ( )                     color_option
   keyword  whole  switch         color_command
   keyword  whole  println        color_command
   keyword  whole  case           color_command
+
+
+
+# Comments
+context exclusive /\* \*/ color_comment
+    spellcheck
+
+context exclusive // \n color_comment
+    spellcheck
+
+
+# Strings
+context           " "            color_string
