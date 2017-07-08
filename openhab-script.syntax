@@ -1,0 +1,152 @@
+# Syntax highlighting for rules files of openHAB in mcedit
+wholechars abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_01234567890
+
+# default colors
+define  color_command            white
+define  color_vartype            cyan
+define  color_rule               brightred
+define  color_trigger            brightcyan
+define  color_event              brightred
+define  color_timer              red
+define  color_system             brightred
+define  color_string             brightgreen
+define  color_option             green
+define  color_option_quote       brightgreen
+define  color_parameter          yellow
+define  color_comment            brown
+
+context default
+# Commands
+  keyword  whole  import         color_command
+  keyword  whole  var            color_command
+  keyword  whole  say            color_command
+  keyword  whole  if             color_command
+  keyword  whole  else           color_command
+  keyword  whole  while          color_command
+  keyword  whole  switch         color_command
+  keyword  whole  println        color_command
+  keyword  whole  case           color_command
+  keyword  whole  or             color_command
+  keyword  whole  default        color_command
+  keyword  whole  postUpdate     color_command
+  keyword  whole  sendCommand    color_command
+  keyword  whole  createTimer    color_command
+  keyword  whole  sendTelegram   color_command
+  keyword  whole  sendTweet      color_command
+  keyword  whole  sendMail       color_command
+  keyword  whole  notifyMyAndroid color_command
+  keyword  whole  logWarn        color_command
+  keyword  whole  logDebug       color_command
+  keyword  whole  logInfo        color_command
+  keyword  whole  logMessage     color_command
+  keyword  whole  startTime      color_command
+  keyword  whole  endTime        color_command
+  keyword  whole  callScript     color_command
+  keyword  whole  Thread         color_command
+  keyword  whole  sleep          color_command
+  keyword  whole  state          color_command
+
+# VarTypes
+  keyword  whole  Timer          color_vartype
+  keyword  whole  Number         color_vartype
+  keyword  whole  String         color_vartype
+  keyword  whole  int            color_vartype
+
+# Rules
+  keyword  whole  rule           color_rule
+  keyword  whole  when           color_rule
+  keyword  whole  then           color_rule
+  keyword  whole  end            color_rule
+
+# Trigger
+  keyword  whole  Item           color_trigger
+  keyword  whole  Time           color_trigger
+  keyword  whole  System         color_trigger
+
+# Events
+  keyword  whole  received       color_event
+  keyword  whole  command        color_event
+  keyword  whole  update         color_event
+  keyword  whole  changed        color_event
+  keyword  whole  from           color_event
+  keyword  whole  to             color_event
+
+# Timer
+  keyword  whole  cron           color_timer
+  keyword  whole  is             color_timer
+
+# System
+  keyword  whole  started        color_system
+  keyword  whole  shuts          color_system
+  keyword  whole  down           color_system
+
+# Parameters
+  keyword  whole  name           color_parameter
+  keyword  whole  label          color_parameter
+  keyword  whole  item           color_parameter
+  keyword  whole  period         color_parameter
+  keyword  whole  refresh        color_parameter
+  keyword  whole  icon           color_parameter
+  keyword  whole  mappings       color_parameter
+  keyword  whole  minValue       color_parameter
+  keyword  whole  maxValue       color_parameter
+  keyword  whole  step           color_parameter
+  keyword  whole  switchsupport  color_parameter
+  keyword  whole  url            color_parameter
+  keyword  whole  hight          color_parameter
+  keyword  whole  playStream     color_parameter
+  keyword  whole  setMasterVolume       color_parameter
+  keyword  whole  increaseMasterVolume  color_parameter
+  keyword  whole  decreaseMasterVolume  color_parameter
+
+# Numbers
+  keyword  \{0123456789\}  color_vartype
+  keyword  NULL            color_vartype
+  keyword  UNDEF           color_vartype
+  keyword  ON              color_vartype
+  keyword  OFF             color_vartype
+  keyword  OPEN            color_vartype
+  keyword  CLOSED          color_vartype
+  keyword  OFF             color_vartype
+
+
+# Operators
+  keyword  ->              color_parameter
+  keyword  =>              color_parameter
+  keyword  >               color_parameter
+  keyword  <               color_parameter
+  keyword  \+              color_parameter
+  keyword  -               color_parameter
+  keyword  \*              color_parameter
+  keyword  /               color_parameter
+  keyword  =               color_parameter
+  keyword  !=              color_parameter
+  keyword  ==              color_parameter
+  keyword  &&              color_parameter
+  keyword  ||              color_parameter
+  keyword  !               color_parameter
+
+
+  keyword  "*"                   color_option_quote
+  keyword  whole  import         color_command
+  keyword  whole  var            color_command
+  keyword  whole  say            color_command
+  keyword  whole  if             color_command
+  keyword  whole  else           color_command
+  keyword  whole  postUpdate     color_command
+  keyword  whole  switch         color_command
+  keyword  whole  println        color_command
+  keyword  whole  case           color_command
+
+
+
+# Comments
+context exclusive /\* \*/ color_comment
+    spellcheck
+
+context exclusive // \n color_comment
+    spellcheck
+
+
+# Strings
+context           " "            color_string
