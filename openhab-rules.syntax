@@ -60,6 +60,7 @@ context default
 
 # Trigger
   keyword  whole  Item           color_trigger
+  keyword  whole  Thing          color_trigger
   keyword  whole  Time           color_trigger
   keyword  whole  System         color_trigger
 
