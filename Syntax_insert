@@ -11,4 +11,4 @@ file ..\*\\.(rules)$ openHAB\sRules
 include openhab-rules.syntax
 
 file ..\*\\.(script)$ openHAB\sScript
-include openhab-rules.syntax
+include openhab-script.syntax
