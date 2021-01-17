@@ -1,6 +1,6 @@
---- Syntax.backup	2017-01-23 20:52:19.358163297 +0100
-+++ Syntax	2017-01-23 21:58:18.030164996 +0100
-@@ -199,7 +199,7 @@
+--- Syntax.original	2021-01-17 22:19:27.631342941 +0100
++++ Syntax	2021-01-17 22:20:26.941502988 +0100
+@@ -214,7 +214,7 @@
  file control$ Debian\scontrol\sfile
  include debian-control.syntax
  
@@ -9,12 +9,12 @@
  include makefile.syntax
  
  file .\*changelog$ Debian\schangelog\sfile
-@@ -256,5 +256,17 @@
- file ..\*\\.([lL][kK][rR])$ PIC\slinker\sscript\sfile
- include lkr.syntax
+@@ -298,5 +298,20 @@
+ file ..\*\\.proto$ Protobuf\sFile
+ include protobuf.syntax
  
 +file ..\*\\.(items)$ openHAB\sItems
-+include openhab-items.syntax  
++include openhab-items.syntax
 +
 +file ..\*\\.(sitemap)$ openHAB\sSitemap
 +include openhab-sitemap.syntax
