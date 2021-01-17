@@ -1,7 +1,7 @@
-file ..\*\\.(items)$ openHAB\sItems 
-include openhab-items.syntax  
+file ..\*\\.(items)$ openHAB\sItems
+include openhab-items.syntax
 
-file ..\*\\.(sitemap)$ openHAB\sSitemap 
+file ..\*\\.(sitemap)$ openHAB\sSitemap
 include openhab-sitemap.syntax
 
 file ..\*\\.(persist)$ openHAB\sPersistence
