@@ -144,16 +144,16 @@ context default
 
 # Functions
   keyword  whole  .zonedDateTime  color_function
-  keyword  whole  .getStateAs     color_function
+  keyword  whole  getStateAs      color_function
   keyword  whole  now             color_function
-  keyword  whole  .until          color_function
-  keyword  whole  .getHour        color_function
-  keyword  whole  .getMinute      color_function
-  keyword  whole  .parse          color_function
-  keyword  whole  .maximumSince   color_function
-  keyword  whole  .minimumSince   color_function
-  keyword  whole  .maximumBetween color_function
-  keyword  whole  .minimumBetween color_function
+  keyword  whole  until           color_function
+  keyword  whole  getHour         color_function
+  keyword  whole  getMinute       color_function
+  keyword  whole  parse           color_function
+  keyword  whole  maximumSince    color_function
+  keyword  whole  minimumSince    color_function
+  keyword  whole  maximumBetween  color_function
+  keyword  whole  minimumBetween  color_function
   
 
 # Comments
