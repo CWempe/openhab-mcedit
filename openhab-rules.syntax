@@ -50,10 +50,13 @@ context default
   keyword  whole  executeCommandLine  color_command
 
 # VarTypes
-  keyword  whole  Timer          color_vartype
+  keyword  whole  DateTimeType   color_vartype
   keyword  whole  Number         color_vartype
   keyword  whole  String         color_vartype
+  keyword  whole  Timer          color_vartype
+  keyword  whole  float          color_vartype
   keyword  whole  int            color_vartype
+  keyword  whole  long           color_vartype
 
 # Rules
   keyword  whole  rule           color_rule
@@ -129,7 +132,7 @@ context default
   keyword  &&              color_parameter
   keyword  ||              color_parameter
   keyword  !               color_parameter
-
+  keyword  whole  as       color_parameter
 
   keyword  "*"                   color_option_quote
   keyword  whole  import         color_command
@@ -143,18 +146,42 @@ context default
   keyword  whole  case           color_command
 
 # Functions
-  keyword  whole  .zonedDateTime  color_function
+  keyword  whole  zonedDateTime  color_function
   keyword  whole  getStateAs      color_function
   keyword  whole  now             color_function
-  keyword  whole  until           color_function
-  keyword  whole  getHour         color_function
-  keyword  whole  getMinute       color_function
   keyword  whole  parse           color_function
-  keyword  whole  maximumSince    color_function
-  keyword  whole  minimumSince    color_function
-  keyword  whole  maximumBetween  color_function
-  keyword  whole  minimumBetween  color_function
+  keyword  whole  toString        color_function
+  keyword  whole  substring       color_function 
+  keyword  whole  until           color_function
   
+  keyword  whole  getMinute       color_function
+  keyword  whole  getHour         color_function
+  keyword  whole  getDayOfMonth   color_function
+ 
+  keyword  whole  historicState   color_function
+  keyword  whole  lastUpdate      color_function
+  keyword  whole  averageSince    color_function
+  keyword  whole  deltaBetween    color_function
+  keyword  whole  deltaSince      color_function
+  keyword  whole  maximumBetween  color_function
+  keyword  whole  maximumSince    color_function
+  keyword  whole  minimumBetween  color_function
+  keyword  whole  minimumSince    color_function
+ 
+  keyword  whole  minusSeconds    color_function
+  keyword  whole  minusMinutes    color_function
+  keyword  whole  minusHours      color_function
+  keyword  whole  minusDays       color_function
+  keyword  whole  minusWeeks      color_function
+  keyword  whole  minusMonths     color_function
+  keyword  whole  minusYears      color_function
+  keyword  whole  plusSeconds     color_function
+  keyword  whole  plusMinutes     color_function
+  keyword  whole  plusHours       color_function
+  keyword  whole  plusDays        color_function
+  keyword  whole  plusWeeks       color_function
+  keyword  whole  plusMonths      color_function
+  keyword  whole  plusYears       color_function
 
 # Comments
 context exclusive /\* \*/ color_comment
